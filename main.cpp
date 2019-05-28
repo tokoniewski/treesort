@@ -121,30 +121,22 @@ int main()
     int tab[TAB_CNT];
     tnode *tree_head = new tnode;
 
-
-
     if (tree_head == 0)
         return 0;
     cout << typeid(tree_head).name() << endl;
     cout << typeid(tab[0]).name() << endl;
 
-
    srand(time(NULL));
 
-
    gen_tab(tab, TAB_CNT, 100);
-
 
    for(int i=0; i<TAB_CNT; i++)
         cout << tab[i] << " ";
     cout << endl;
 
-
    gen_tree(tree_head, tab, TAB_CNT);
 
-
    delete_tree(tree_head);
-
 
    return 0;
 }
